@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StyleHub - Contact</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background-color: #e75480;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+    }
+
+    .sidebar a {
+      padding: 15px 20px;
+      text-decoration: none;
+      color: white;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #d64571;
+    }
+
+    /* Main content */
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    .header {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+    }
+
+    .site-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #e75480;
+    }
+
+    /* Content area */
+    .content {
+      padding: 20px;
+    }
+
+    /* Contact form styling */
+    .contact-section {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      max-width: 600px;
+    }
+
+    .contact-section h2 {
+      color: #e75480;
+      margin-bottom: 15px;
+    }
+
+    .contact-section label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .contact-section input, 
+    .contact-section textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .contact-section textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .contact-section button {
+      margin-top: 15px;
+      background-color: #e75480;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-section button:hover {
+      background-color: #d64571;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="mainpage.html">Home</a>
+    <a href="booking.html">Bookings</a>
+    <a href="services.html">Services</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Main area -->
+  <div class="main-content">
+    <!-- Header -->
+    <div class="header">
+      <img src="c:\Users\acer\Downloads\Black and White Modern Personal Brand Logo.png" alt="StyleHub Logo" class="logo">
+      <span class="site-title">StyleHub</span>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div class="contact-section">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

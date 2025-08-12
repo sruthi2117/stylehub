@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StyleHub - Bookings</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background-color: #e75480;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+    }
+
+    .sidebar a {
+      padding: 15px 20px;
+      text-decoration: none;
+      color: white;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #d64571;
+    }
+
+    /* Main content */
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    .header {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+    }
+
+    .site-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #e75480;
+    }
+
+    /* Page content area */
+    .content {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="mainpage.html">Home</a>
+    <a href="booking.html">Bookings</a>
+    <a href="services.html">Services</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Main area -->
+  <div class="main-content">
+    <!-- Header -->
+    <div class="header">
+      <img src="c:\Users\acer\Downloads\Black and White Modern Personal Brand Logo.png" alt="StyleHub Logo" class="logo">
+      <span class="site-title">StyleHub</span>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <h2>Bookings</h2>
+      <p>Book your salon, spa, or beauty service appointment here.</p>
+
+      <form>
+        <label>Full Name:</label><br>
+        <input type="text" placeholder="Enter your name" required><br><br>
+
+        <label>Service:</label><br>
+        <select required>
+          <option value="">Select Service</option>
+          <option>Haircut</option>
+          <option>Facial</option>
+          <option>Massage</option>
+          <option>Manicure/Pedicure</option>
+        </select><br><br>
+
+        <label>Date:</label><br>
+        <input type="date" required><br><br>
+
+        <label>Time:</label><br>
+        <input type="time" required><br><br>
+
+        <button type="submit" style="background:#e75480; color:white; padding:10px 20px; border:none; border-radius:5px;">Book Now</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
